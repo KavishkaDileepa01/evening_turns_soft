@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love You More</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <picture class="hero__media">
+          <source media="(max-width: 640px)" srcset="assets/hero-sunset-beach-mobile.jpg" />
+          <img
+            class="hero__image"
+            src="assets/hero-sunset-beach-desktop.jpg"
+            alt="A glowing sunset sky over the beach"
+          />
+        </picture>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Under This Sky</p>
+          <h1 id="hero-title">Meet me where the evening turns soft.</h1>
+          <p class="hero__copy">
+            For the person who makes every sunset feel personal, every silence feel
+            safe, and every ordinary moment worth holding a little longer.
+          </p>
+          <button class="button button--light" type="button" data-scroll="#letter">
+            <span class="button__icon" aria-hidden="true">+</span>
+            Start
+          </button>
+        </div>
+      </section>
+
+      <section class="letter section-pad" id="letter" aria-labelledby="letter-title">
+        <div class="section-shell letter__grid">
+          <div>
+            <p class="eyebrow">Tide Note</p>
+            <h2 id="letter-title">Open this when the day feels heavy.</h2>
+            <p class="section-copy">
+              Think of this like a sunset kept in your pocket: warm, quiet, and
+              waiting for the exact moment your heart needs it.
+            </p>
+            <button class="button" type="button" id="open-letter">
+              <span class="button__icon" aria-hidden="true">v</span>
+              Open
+            </button>
+          </div>
+
+          <article class="envelope" aria-live="polite">
+            <div class="envelope__flap" aria-hidden="true"></div>
+            <div class="envelope__paper">
+              <p class="letter-line">Dear favorite person,</p>
+              <p class="letter-line">If the sky can hold this much color,</p>
+              <p class="letter-line">my heart can hold this much love for you.</p>
+              <p class="letter-line">Always. And yes, I love you more.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="reasons section-pad" id="reasons" aria-labelledby="reasons-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Golden Reasons</p>
+              <h2 id="reasons-title">Reasons my heart keeps finding you.</h2>
+            </div>
+            <button class="button button--ghost" type="button" id="reveal-reasons">
+              <span class="button__icon" aria-hidden="true">*</span>
+              LesssGo
+            </button>
+          </div>
+
+          <div class="reason-grid" aria-live="polite">
+            <article class="reason-card">
+              <span class="reason-card__number">01</span>
+              <h3>Your calm</h3>
+              <p>You arrive like low tide, making everything inside me breathe easier.</p>
+            </article>
+            <article class="reason-card">
+              <span class="reason-card__number">02</span>
+              <h3>Your laugh</h3>
+              <p>It catches the light and turns a plain second into a keepsake.</p>
+            </article>
+            <article class="reason-card">
+              <span class="reason-card__number">03</span>
+              <h3>Your heart</h3>
+              <p>You care in quiet waves, steady enough to be felt long after.</p>
+            </article>
+            <article class="reason-card">
+              <span class="reason-card__number">04</span>
+              <h3>Your courage</h3>
+              <p>Even when the horizon feels far, you keep walking with grace.</p>
+            </article>
+            <article class="reason-card">
+              <span class="reason-card__number">05</span>
+              <h3>Your presence</h3>
+              <p>With you, silence feels like watching the sun sink into peace.</p>
+            </article>
+            <article class="reason-card">
+              <span class="reason-card__number">06</span>
+              <h3>Your magic</h3>
+              <p>You turn simple things into little golden places I want to stay.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="promise section-pad" aria-labelledby="promise-title">
+        <div class="section-shell promise__layout">
+          <div>
+            <p class="eyebrow">Shoreline Promises</p>
+            <h2 id="promise-title">Three promises, gently kept.</h2>
+          </div>
+          <ul class="promise-list">
+            <li>
+              <span aria-hidden="true">01</span>
+              I will notice the little things, even when life moves fast.
+            </li>
+            <li>
+              <span aria-hidden="true">02</span>
+              I will choose kindness when words feel difficult.
+            </li>
+            <li>
+              <span aria-hidden="true">03</span>
+              I will keep making space for us to be soft.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="finale section-pad" id="finale" aria-labelledby="finale-title">
+        <div class="section-shell finale__box">
+          <p class="eyebrow">Sunset Signal</p>
+          <h2 id="finale-title">Send this little heartbeat.</h2>
+          <p class="section-copy">
+            When the world gets noisy, come back here. The sky will still be warm,
+            and this page will still be saying the quiet part clearly.
+          </p>
+          <button class="button button--light" type="button" id="send-love">
+            <span class="button__icon" aria-hidden="true">&gt;</span>
+            Send
+          </button>
+          <p class="final-message" id="final-message" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
