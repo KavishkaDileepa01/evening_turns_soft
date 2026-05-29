@@ -147,6 +147,44 @@
       </section>
     </main>
 
+    <audio
+      id="background-music"
+      src="assets/background-music.mp3"
+      preload="auto"
+      autoplay
+      loop
+      playsinline
+    ></audio>
+    <aside class="romantic-cta" id="heart-unlock" aria-hidden="false">
+      <div class="romantic-cta__message">
+        <p>This place was made only for you... but first, tap the heart, baby</p>
+        <div class="romantic-cta__arrow-wrap" id="romantic-arrow" aria-hidden="true">
+          <span class="romantic-cta__arrow-trail" aria-hidden="true"></span>
+          <video
+            class="romantic-cta__arrow-video--source"
+            src="assets/vecteezy_curved-black-arrow-animation-on-a-green-screen-background_68265535.mp4"
+            muted
+            loop
+            autoplay
+            playsinline
+            aria-hidden="true"
+          ></video>
+          <canvas class="romantic-cta__arrow-video" aria-hidden="true"></canvas>
+        </div>
+      </div>
+      <button class="romantic-cta__heart" id="music-toggle" type="button" aria-label="Tap the heart">
+        <span class="romantic-cta__heart-icon" aria-hidden="true">♥</span>
+      </button>
+    </aside>
+
+    <div class="romantic-popup" id="romantic-popup" role="dialog" aria-modal="true" aria-labelledby="romantic-popup-title" hidden>
+      <div class="romantic-popup__backdrop" data-close-popup></div>
+      <div class="romantic-popup__card">
+        <p class="romantic-popup__title" id="romantic-popup-title">You unlocked my heart 💖</p>
+        <button class="romantic-popup__button" type="button" data-close-popup>Stay with me</button>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
